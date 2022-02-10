@@ -45,6 +45,12 @@ import MaterialButton from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import "./about.css";
 import * as ROUTES from "../../constants/routes";
+import BottomNavigation from "@mui/material/BottomNavigation";
+import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import footerLogo from "../Files/footer1.png";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const About = () => (
   <div>
@@ -123,6 +129,33 @@ const About = () => (
         </Box>
       </Box>
     </MaterialCard>
+
+    <BottomNavigation showLabels align="left">
+      <Typography
+        variant="h6"
+        color="inherit"
+        noWrap
+        sx={{ m: 1 }}
+        align="left"
+      >
+        <img noWrap sx={{ flexGrow: 1 }} src={footerLogo} alt="logo"></img>
+      </Typography>
+      <Typography
+        variant="h6"
+        color="inherit"
+        noWrap
+        sx={{ m: 1, mt: 2.1, ml: 0 }}
+        variant="caption"
+      >
+        @All Rights Reserved.
+      </Typography>
+      <BottomNavigationAction label="Company" icon={<footerLogo />} />
+      <BottomNavigationAction label="Contact" />
+      <BottomNavigationAction label="Legal Mentioins" />
+      <BottomNavigationAction icon={<FacebookIcon />} />
+      <BottomNavigationAction icon={<TwitterIcon />} />
+      <BottomNavigationAction icon={<InstagramIcon />} />
+    </BottomNavigation>
   </div>
 );
 
