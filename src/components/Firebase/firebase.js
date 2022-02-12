@@ -1,8 +1,8 @@
-import app from 'firebase/app';
-import 'firebase/auth';
-import 'firebase/database';
-import 'firebase/firestore';
-import 'firebase/storage';
+import app from "firebase/app";
+import "firebase/auth";
+import "firebase/database";
+import "firebase/firestore";
+import "firebase/storage";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -13,12 +13,12 @@ const firebaseConfig = {
   storageBucket: "cognitive-78143.appspot.com",
   messagingSenderId: "49597652550",
   appId: "1:49597652550:web:e3a90c02150dbd404e3447",
-  measurementId: "G-KC1HLY8BP6"
+  measurementId: "G-KC1HLY8BP6",
 };
 
-  class Firebase {
+class Firebase {
   constructor() {
-    app.initializeApp(firebaseConfig);
+    // app.initializeApp(firebaseConfig);
     this.db = app.database();
     this.auth = app.auth();
   }
@@ -28,11 +28,12 @@ const firebaseConfig = {
   doSignInWithEmailAndPassword = (email, password) =>
     this.auth.signInWithEmailAndPassword(email, password);
   doSignOut = () => this.auth.signOut();
-  doPasswordReset = email => this.auth.sendPasswordResetEmail(email);
-  doPasswordUpdate = password =>
+  doPasswordReset = (email) => this.auth.sendPasswordResetEmail(email);
+  doPasswordUpdate = (password) =>
     this.auth.currentUser.updatePassword(password);
-  
-  snps = () => this.db.ref('Cognitive');
+
+  snps = () => this.db.ref("Cognitive");
+  blogs = () => this.db.ref("demo");
 }
 
 export default Firebase;
