@@ -1,0 +1,58 @@
+.blog-main-container {
+  min-height: 100vh;
+  background: #f8f8f8;
+  padding-top: 40px;
+}
+.blog-top-heading {
+  font-size: 48px;
+  color: #032e54;
+  margin-bottom: 15px;
+}
+.blog-top-short-description {
+  font-size: 16px;
+  color: #032e54;
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+.blog-container {
+  background: #032e54;
+  opacity: 0.8;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 15px 12px;
+  margin-top: 35px !important;
+}
+.category-tag {
+  background: rgba(165, 165, 165, 0.329);
+  padding: 5px 8px;
+  border-radius: 8px;
+}
+.category-tag:first-child {
+  margin-right: 10px;
+}
+.blog-article-part {
+  margin-top: 15px;
+}
+
+.blog-article-description {
+  margin-top: 10px !important;
+  font-weight: 300 !important;
+}
+
+.blog-article-left-part {
+  width: 80%;
+}
+.blog-article-right-part {
+  width: 20%;
+  text-align: right;
+}
+.MuiBox-root {
+  margin-top: 10px;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin-right: 10px;
+}
