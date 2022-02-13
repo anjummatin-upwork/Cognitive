@@ -161,7 +161,6 @@ const Blog = () => {
                             id="vehicle2"
                             name="vehicle2"
                             value={value}
-                            sx={{ m: -2 }}
                           />
                           {value}
                         </label>
